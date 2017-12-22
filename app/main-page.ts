@@ -8,6 +8,7 @@ export function navigatingTo(args) {
 }
 
 export function search(args) {
+    console.log('search')
     const searchBar =  args.object
     vm.filter(searchBar.text)
     global.removeSearchFocus( searchBar )
